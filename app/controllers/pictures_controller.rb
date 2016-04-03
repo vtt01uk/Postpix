@@ -2,6 +2,7 @@ class PicturesController < ApplicationController
   before_action :find_picture, only: [:show, :edit, :update, :destroy]
   
   def index
+    @pictures = Picture.all.order("created_at DESC")
   end
   
   def show
@@ -16,10 +17,22 @@ class PicturesController < ApplicationController
     @picture = Picture.new(picture_params)
 
     if @picture.save
-      flash[:notice] = "Picture saved~"
+      flash[:notice] = "Post pic was saved"
       redirect_to @picture
     else
       render 'new'
+    end
+  end
+  
+  def edit
+  end
+  
+  def update
+    if @picture.update(picture_params)
+      flash[:notice] = "Post pic was edited"
+      redirect_to @picture
+    else
+      render 'edit'
     end
   end
   
