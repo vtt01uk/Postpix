@@ -14,7 +14,7 @@
         - if user_signed_in?
           %ul.nav.navbar-nav.navbar-left
             %li= link_to "Post pic", new_picture_path 
-            %li= link_to "Settings", edit_user_registration_path 
+            %li= link_to "Settings", edit_user_registration_path
             %li= link_to "Sign Out", destroy_user_session_path, method: :delete
         - else
           %ul.nav.navbar-nav.navbar-left
