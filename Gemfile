@@ -20,6 +20,8 @@ gem 'haml', '~> 4.0.5'
 gem 'simple_form', '~> 3.0.2'
 # bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
 gem 'bootstrap-sass', '~> 3.2.0.2'
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 3.4.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

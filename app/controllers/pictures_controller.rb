@@ -10,11 +10,13 @@ class PicturesController < ApplicationController
   end
   
   def new
-    @picture = Picture.new
+    # picture are being built by the current user
+    @picture = current_user.pictures.build
+    #@picture = Picture.new
   end
   
   def create
-    @picture = Picture.new(picture_params)
+    @picture = current_user.pictures.build(picture_params)
 
     if @picture.save
       flash[:notice] = "Post pic was saved"
