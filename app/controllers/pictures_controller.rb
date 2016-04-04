@@ -36,6 +36,12 @@ class PicturesController < ApplicationController
     end
   end
   
+  def destroy
+    @picture.destroy
+    flash[:notice] = "Post pic was deleted"
+    redirect_to root_path
+  end
+  
   private
   
   def picture_params
