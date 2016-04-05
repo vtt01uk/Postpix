@@ -22,6 +22,8 @@ gem 'simple_form', '~> 3.0.2'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 3.4.1'
+# Easy upload management for ActiveRecord
+gem 'paperclip', '~> 4.2.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

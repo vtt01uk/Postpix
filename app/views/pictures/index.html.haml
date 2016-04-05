@@ -1,4 +1,4 @@
 - @pictures.each do |picture|
+  = link_to (image_tag picture.image.url(:medium)), picture
   %h2= link_to picture.title, picture
-  
-= link_to "Post new pic",  new_picture_path
+
