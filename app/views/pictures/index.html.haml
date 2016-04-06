@@ -4,7 +4,7 @@
     - @pictures.each do |picture|
       .panel.panel-default
         .panel-body
-          = link_to (image_tag picture.image.url(:medium)), picture
+          = link_to (image_tag picture.image.url), picture
           %h2= link_to picture.title, picture
 
 

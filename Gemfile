@@ -25,6 +25,8 @@ gem 'devise', '~> 3.4.1'
 # Easy upload management for ActiveRecord
 gem 'paperclip', '~> 4.2.0'
 gem 'masonry-rails', '~> 0.2.1'
+# Rails gem to allowing records to be votable
+gem 'acts_as_votable', '~> 0.10.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
