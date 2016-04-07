@@ -2,14 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-#$ ->
-#  $('#pictures').imagesLoaded ->
-#    $('#pictures').masonry
-#      itemSelector: '.box'
-#      isFitWidth: true
-
-  $('#pictures').masonry({
-    itemSelector: '.box',
-    columnWidth: 200,
-    isFitWidth: true
-  });
+$ ->
+  $('#pics').imagesLoaded ->
+    $('#pics').masonry
+      itemSelector: '.box'
+      isFitWidth: true
